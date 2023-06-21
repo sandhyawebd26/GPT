@@ -10,8 +10,8 @@ import AIhand from "../../../public/Images/AI-hand.svg";
 import arrow from "../../../public/Images/arrow.svg";
 import T from "../../../public/Images/T.svg";
 import Tcontainer from "../../../public/Images/Tcontainer.svg";
-import { useTranslation } from "react-i18next";
-import Navbar from "../../../component/navbar/navbar";
+import { useTranslation } from "next-i18next";
+import Navbar from "../../component/navbar/navbar";
 import Link from "next/link";
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
               </h2>
               <p className="mb-5 md:leading-7	">
                 {t(
-                  "Experience the awe-inspiring potential as our cutting-edge AI-powered app harnesses the power of advanced image recognition technology. It effortlessly deciphers doctor's prescription images, presenting patients with comprehensive insights into their medication and treatment plans, fostering clarity and empowerment."
+                  "Experience the awe-inspiring potential as our cutting-edge AI-powered app harnesses the power of advanced image recognition technology. It effortlessly deciphers doctor&lsquo;s prescription images, presenting patients with comprehensive insights into their medication and treatment plans, fostering clarity and empowerment."
                 )}
               </p>
               <Link

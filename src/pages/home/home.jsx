@@ -1,11 +1,16 @@
 import React, { useTransition } from "react";
 import Image from "next/image";
-import Navbar from "../../../component/navbar/navbar";
+import Navbar from "../../component/navbar/navbar";
 import mainImage from "../../../public/Images/mainImage.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const Home = () => {
   const { t } = useTranslation();
+
+  const medicalReportPlaceholder = t(
+    "Write your medical report. We can provide you with explanations regarding the results and observations, whether it is a consultation report, an imaging report, a surgical intervention report, a pathology report, a laboratory report, and much more."
+  );
+
   return (
     <>
       <Navbar />
@@ -20,8 +25,7 @@ const Home = () => {
               type="text"
               name=""
               id=""
-              placeholder={t("Write your medical report. We can provide you with explanations regarding the results and observations, whether it is a consultation report, an imaging report, a surgical intervention report, a pathology report, a laboratory report, and much more."
-              )}
+              placeholder={medicalReportPlaceholder}
             />
           </div>
           <div className="flex mt-10">
